@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style>
+		form{
+			 background-image:linear-gradient(to right  , #3472c2 , #72aef6);
+    text-align: center;
+    margin: 5% auto 15% auto;
+    width: 50%;
+    padding:10px ;
+    border-radius: 50px;
+}
+ h1{
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	margin-bottom: 20px;
+
+		}
+		#username,#pass,#phone,#email,#sub{
+	 width: 30%;
+    height: 50px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    background-image:linear-gradient(to right , #72aef6 , #3472c2);
+    border-color: #5BA2DF;
+    box-shadow: 50px;
+    text-decoration-color: white;
+    outline: 30px;
+    font-family:  'Lora', serif;
+    text-align: center;
+
+
+}
+
+ .co{
+    width: 25%;
+	 text-align: center;
+   margin-left: 10px;
+   font-size: 12px;
+   color:#6AA8FA;
+   background-color:white ;
+   border-color:white ;
+    box-shadow: 20px;
+    border-radius: 50px;
+    height: 33px;
+
+}
+label{
+	color: white;
+	font-size: 20px;
+}
+	#username{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	#pass{
+		margin-bottom: 15px;
+		margin-top: 15px;
+
+	}
+	#phone{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	#email{
+		margin-bottom: 15px;
+				margin-top: 15px;
+
+	}
+	#sub{
+		margin-bottom: 15px;
+				margin-top: 15px;
+
+	}
+	
+
+	</style>
+
+ <form action=" test.py" method="post">
+ 	<h1>Sign In</h1>
+ 	    <label for="username">Username: </label><br>
+            <input type="text" id="username" name="username"
+               placeholder="Enter Your name" required size="25" maxlenght="5"><hr>
+
+<br> 
+         <label> password: </label><br>
+              <input type="password" name="password" required size="25" placeholder="password" id="pass"><hr>
+
+<br>
+
+
+         <label>Phone Number:</label><br>
+              <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" placeholder=" your phone"><hr>
+<br> 
+        <label>Email:</label><br>
+              <input type="Email" name="email" required placeholder="enter your email" id="email">
+<hr>
+<br>
+        <label>Subject</label><br>
+               <input type="Subject" name="Subject" placeholder="Subject" id="sub">
+<hr>
+<br>
+<input type="button" value="send data" onclick="alert('Send')" class="co">
+            <input type="hidden" name="user" value="12" />
+            
+            <input type="reset" value="Empty form" class="co" >
+
+
+
+
+
+
+
+
+
+
+
+
+ </form>
+
+
+
+
+
+
+</body>
+</html>
